@@ -58,6 +58,12 @@
 			<version>${postgresql.driver.version}</version>
 		</dependency>
 
+		<dependency>
+			<groupId>org.liquibase</groupId>
+			<artifactId>liquibase-core</artifactId>
+			<version>4.31.1</version>
+		</dependency>
+
 
 	</dependencies>
 
