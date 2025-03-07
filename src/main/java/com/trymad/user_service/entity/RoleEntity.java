@@ -2,7 +2,7 @@ package com.trymad.user_service.entity;
 
 import java.util.Set;
 
-import com.trymad.user_service.model.AppRole;
+import com.trymad.user_service.model.Role;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.EnumType;
@@ -27,14 +27,14 @@ import lombok.Setter;
 
 @Entity
 @Table(name = "roles")
-public class AppRoleEntity {
+public class RoleEntity {
 	
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long id;
 	
 	@Enumerated(value = EnumType.STRING)
-	private AppRole name;
+	private Role name;
 
 	@ManyToMany(fetch = FetchType.LAZY, mappedBy = "roles")
 	private Set<AppUser> users;

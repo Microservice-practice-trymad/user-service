@@ -1,6 +1,6 @@
 package com.trymad.user_service.model;
 
-public enum AppRole {
+public enum Role {
 	
 	USER, MODERATOR, ADMIN
 
