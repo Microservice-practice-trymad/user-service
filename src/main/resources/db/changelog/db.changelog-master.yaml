@@ -3,3 +3,5 @@ databaseChangeLog:
       file: db/changelog/changeset-1-create-tables.yaml
   - include:
       file: db/changelog/changeset-2-fix-foreign-key-users-roles.yaml
+  - include:
+      file: db/changelog/changeset-3-add-date-column-for-user.yaml
