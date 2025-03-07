@@ -1,6 +1,7 @@
 package com.trymad.user_service.entity;
 
 import java.time.LocalDateTime;
+import java.util.HashSet;
 import java.util.Set;
 import java.util.UUID;
 
@@ -53,6 +54,6 @@ public class AppUser {
         joinColumns = @JoinColumn(name = "user_id"),
         inverseJoinColumns = @JoinColumn(name = "role_id")
     )
-	private Set<AppRoleEntity> roles;
+	private final Set<RoleEntity> roles = new HashSet<>();
 	
 }
