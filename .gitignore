@@ -31,3 +31,11 @@ build/
 
 ### VS Code ###
 .vscode/
+
+#dev profile
+src/main/resources/application-dev.yaml
+#test data
+src/main/resources/data.sql
+#env
+.env
+
