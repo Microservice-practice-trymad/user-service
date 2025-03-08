@@ -15,6 +15,7 @@
 		<mapstruct.version>1.6.3</mapstruct.version>
 		<postgresql.driver.version>42.7.5</postgresql.driver.version>
 		<liquibase.version>4.31.1</liquibase.version>
+		<dotenv.version>4.0.0</dotenv.version>
 	</properties>
 
 	<parent>
@@ -65,6 +66,12 @@
 			<groupId>org.mapstruct</groupId>
 			<artifactId>mapstruct</artifactId>
 			<version>${mapstruct.version}</version>
+		</dependency>
+
+		<dependency>
+		<groupId>me.paulschwarz</groupId>
+		<artifactId>spring-dotenv</artifactId>
+		<version>${dotenv.version}</version>
 		</dependency>
 
 	</dependencies>
