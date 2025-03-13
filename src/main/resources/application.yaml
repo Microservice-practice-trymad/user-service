@@ -5,6 +5,8 @@ spring:
     password: ${DB_PASSWORD}
   application:
     name: ${SERVICE_NAME:user-service}
+server:
+  port: ${PORT:8080}
 eureka:
   client:
     service-url:
